@@ -1,10 +1,15 @@
-// api/info.js
-
 export default function handler(req, res) {
-  // Permitir acesso por FancyMenu e navegadores
+  // Habilita CORS corretamente
   res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
-  // Dados que serão retornados
+  if (req.method === 'OPTIONS') {
+    res.status(200).end(); // Responde a pré-verificação CORS
+    return;
+  }
+
+  // Dados da resposta
   const data = {
     nome: "Minha API FancyMenu",
     status: "online",
