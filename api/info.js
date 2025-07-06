@@ -14,7 +14,7 @@ export default function handler(req, res) {
     nome: "Minha API FancyMenu",
     status: "online",
     versao: "1.0.0",
-    ipserver: "arts-crest.gl.joinmc.link"
+    ipserver: "arts-crest.gl.joinmc.link",
     horario: new Date().toISOString()
   };
 
