@@ -11,7 +11,7 @@ export default function handler(req, res) {
 
   // Dados da resposta
   const data = {
-    nome: "Minha API FancyMenu",
+    nome: "Survival",
     status: "online",
     versao: "1.0.0",
     ipserver: "arts-crest.gl.joinmc.link",
